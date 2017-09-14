@@ -1,0 +1,26 @@
+version: '2'
+services:
+  carrefour-bodega-dev:
+    image: registry.machiina.net/machiina/carrefour-bodega:dev
+    environment:
+      APP_ENV: dev
+      DRONE_REPO_BRANCH: dev
+    stdin_open: true
+    tty: true
+    ports:
+    - 58886:8010/tcp
+    command:
+    - npx
+    - http-server-with-auth
+    - -p
+    - '8010'
+    - --username
+    - carrefour
+    - --password
+    - 025000c
+    labels:
+      traefik.port: '8010'
+      traefik.domain: machiina.net
+      traefik.enable: 'true'
+      io.rancher.container.pull_image: always
+      traefik.alias: carrefour-bodega.d
