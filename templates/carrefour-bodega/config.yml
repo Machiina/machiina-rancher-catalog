@@ -1,0 +1,8 @@
+name: Carrefour Bodega # Name of the Catalog Entry
+description: | Un proyecto super chulo joder
+  # Description of the Catalog Entry
+version: 0.0.1-rancher1 # Version of the Catalog to be used
+category: Proyectos cliente # Category to be used for searching catalog entries
+maintainer: Jon Arribas # The maintainer of the catalog entry
+license: All rights reserved # The license
+projectURL: https://github.com/Machiina/025002_carrefour_tu_bodega # A URL related to the catalog entry

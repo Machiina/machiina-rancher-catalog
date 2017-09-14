@@ -1,1 +1,0 @@
-# machiina-rancher-catalog
